@@ -1,5 +1,5 @@
 # Card ver. 2
-New version of my virtual business card, using HTML, and CSS only.
+New version of my virtual business card, using HTML and CSS only.
 
 ## Features  
   
