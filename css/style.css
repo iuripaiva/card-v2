@@ -70,6 +70,7 @@ main section{
 
 section {
 	display: flex;
+	display: flex;
 	justify-content: center;
 	align-content: center;
 	text-align: center;
@@ -118,11 +119,23 @@ section {
 	transition: all 0.5s ease;
 }
 
+.cover-up{
+	position: fixed;
+	width: 25.1rem;
+	height: 10rem;
+	margin-top: 4rem;
+	margin-left: -3.7rem;
+	background-color: var(--black);
+	z-index: 0;
+}
+
 h1 {
+	z-index: 1;
 	font-weight: bold;
 	font-size: 1.2rem;
 	padding: 1rem;
 	margin-top: 9rem;
+	position: relative;
 }
 
 span {
@@ -179,6 +192,6 @@ a{
 }
 
 a:hover{
-	font-size:2.3rem;]
+	font-size:2.3rem;
 	transition: font-size 0.5s ease;
 }
