@@ -23,6 +23,17 @@
     <main>
         <section>
             <div class="card">
+            <div id="toggle-bkg"><div id="toggle-btn"></div></div>
+            <script>
+                const body = document.querySelector("body");
+                const toggle = document.getElementById("toggle-btn");
+                const togglebkg = document.getElementById("toggle-bkg");
+                toggle.onclick = function(){
+                    toggle.classList.toggle("active");
+                    togglebkg.classList.toggle("active");
+                    body.classList.toggle("active");
+                }
+            </script>
                 <div class="content">
                     <div class="cover-up"></div>
                     <img class="profile-pic" src="https://avatars.githubusercontent.com/u/47199107"></img>
