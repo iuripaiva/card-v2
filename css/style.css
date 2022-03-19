@@ -54,12 +54,80 @@ a {
     --black: #150c1d;
     --white: #e0e0e0;
     --purple: #e100ff;
+	--yellow: #ffc400;
     --roboto: 'Roboto', sans-serif;
+	--bkg: url('/img/card-bg.jpg');
+}
+
+#toggle-bkg {
+	display: flex;
+	position: absolute;
+	width: 2em;
+	height: 1em;
+	border-radius: 30%;
+	background-color: #b6b6b6;
+	margin: 1em;
+}
+
+#toggle-btn {
+	width: 1.2em;
+	height: 1.2em;
+	margin-top: -.1em;
+	margin-left: -.3em;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-content: center;
+	border-radius: 90%;
+	background-image: url('https://wallpaperaccess.com/full/896712.jpg');
+	transition: 0.5s;
+}
+
+#toggle-btn::before {
+	margin-top: .3em;
+	font-size: .8em;
+	content: "☀️";
+}
+
+#toggle-btn.active::before {
+	content: "🌙";
+}
+
+#toggle-bkg.active {
+	background: rgb(80, 57, 143);
+	transition: 0.5s;
+}
+
+#toggle-btn.active {
+	margin-left: 1em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-image: url('/img/card-bg.jpg');
+	color: var(--black);
+	transition: 0.5s;
 }
 
 body {
+	--black: #150c1d;
+    --white: #e0e0e0;
+    --purple: #e100ff;
+	--yellow: #ffc400;
+    --roboto: 'Roboto', sans-serif;
+	--bkg: url('/img/card-bg.jpg');
 	background: rgb(23,17,52);
 	font-family: var(--roboto);
+	transition: 0.5s;
+}
+
+body.active {
+	--black: #d8cfdb;
+	--white: #383838;
+	--purple: #b46f06fd;
+    --roboto: 'Roboto', sans-serif;
+	--bkg: url('https://wallpaperaccess.com/full/896712.jpg');
+	font-family: var(--roboto);
+	transition: 0.5s;
 }
 
 main section{
@@ -69,7 +137,6 @@ main section{
 }
 
 section {
-	display: flex;
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -84,7 +151,7 @@ section {
 	height: 30rem;
 	border-radius: 5%;
 	flex-direction: column;
-	background-image: url('/img/card-bg.jpg');
+	background-image: var(--bkg);
 	background-repeat: no-repeat;
 	background-position-y: -32vh;
 	background-size: cover;
@@ -100,6 +167,7 @@ section {
 	align-content: center;
 	text-align: center;
 	color: var(--white);
+	/*color:#ffc400;*/
 }
 
 .profile-pic {
@@ -121,10 +189,10 @@ section {
 
 .cover-up{
 	position: fixed;
-	width: 25.1rem;
+	width: 25rem;
 	height: 15rem;
 	margin-top: 4rem;
-	margin-left: -3.7rem;
+	margin-left: -3.67rem;
 	background-color: var(--black);
 	z-index: 0;
 }
