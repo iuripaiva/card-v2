@@ -171,6 +171,39 @@ section {
 	/*color:#ffc400;*/
 }
 
+#party-hat {
+	opacity: 0;
+	margin-left: -3.5rem;
+	margin-top: -1.5rem;
+	position: fixed;
+	width: 4rem;
+	z-index: 99;
+	transition: all 0.5s ease;
+}
+
+#party-hat.active {
+	opacity: 100%;
+	transition: all 0.5s ease;
+}
+
+#party-confetti {
+	pointer-events: none;
+	opacity: 0;
+	margin-left: -4rem;
+	margin-top: -.15rem;
+	position: fixed;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 40%;
+	z-index: 99;
+	transition: all 0.5s ease;
+}
+
+#party-confetti.active {
+	opacity: 100%;
+	transition: all 0.5s ease;
+}
+
 .profile-pic {
 	margin-left: -4rem;
 	position: fixed;
@@ -186,6 +219,10 @@ section {
 	border-radius: 0;
 	border: .5rem solid var(--black);
 	transition: all 0.5s ease;
+}
+
+.profile-pic:hover ~  #party-confetti{
+	border-radius: 0;
 }
 
 .cover-up{
