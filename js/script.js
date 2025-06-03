@@ -22,7 +22,7 @@ let newAge = year - 1997;
 
 if ((month == "06" && day == "27") || (month > "06")){
     age.innerHTML = newAge;
-} else if (month == "06" && day == "27") {
+} else if (month == "06" && day == "03") {
     age.innerHTML = newAge;
     isBirthday = true;
 } else {
