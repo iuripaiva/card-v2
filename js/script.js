@@ -4,12 +4,14 @@ const toggle = document.getElementById("toggle-btn");
 const togglebkg = document.getElementById("toggle-bkg");
 
 // Theme switch
-toggle.onclick = function(){
+function toggles() {
     toggle.classList.toggle("active");
     togglebkg.classList.toggle("active");
     body.classList.toggle("active");
 }
 
+toggle.onclick = toggles;
+togglebkg.onclick = toggles;
 
 // Script to update my age based on my birthday
 let today = new Date();
