@@ -4,7 +4,6 @@ const toggle = document.getElementById("toggle-btn");
 const togglebkg = document.getElementById("toggle-bkg");
 const partyhat = document.getElementById("party-hat");
 const partyconfetti = document.getElementById("party-confetti");
-let isBirthday = false;
 
 // Theme switch
 toggle.onclick = function(){
@@ -22,14 +21,10 @@ let newAge = year - 1997;
 
 if ((month == "06" && day == "27") || (month > "06")){
     age.innerHTML = newAge;
-} else if (month == "06" && day == "03") {
+} else if (month == "06" && day == "27") {
     age.innerHTML = newAge;
-    isBirthday = true;
-} else {
-    age.innerHTML = newAge - 1;
-}
-
-if (isBirthday == true){
     partyhat.classList.toggle("active");
     partyconfetti.classList.toggle("active");
+} else {
+    age.innerHTML = newAge - 1;
 }
