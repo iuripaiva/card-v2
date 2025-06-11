@@ -115,7 +115,7 @@ body {
 	--yellow: #ffc400;
     --roboto: 'Roboto', sans-serif;
 	--bkg: url('/img/card-bg.jpg');
-	background: rgb(23,17,52);
+	background: radial-gradient(circle,rgba(66, 58, 112, 1) 0%, rgba(39, 34, 66, 1) 59%);
 	font-family: var(--roboto);
 	transition: 0.5s;
 }
