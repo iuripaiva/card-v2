@@ -9,3 +9,4 @@ New version of my virtual business card, using HTML and CSS only.
 - Dark and bright mode;
 - The profile picture is linked to GitHub, so when I update my GitHub pfp, it will automatically update on the card as well.
 - My age will automatically update every year.
+- A funny easter egg happens in the page during my birthday (jun/27)
