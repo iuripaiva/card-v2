@@ -19,12 +19,13 @@ let month = String(today.getMonth() + 1).padStart(2, '0'); // 0 = Jan
 let year = today.getFullYear();
 let newAge = year - 1997;
 
-if ((month == "06" && day == "27") || (month > "06")){
+if (month > "06"){
+    if (day == "27"){
+        age.innerHTML = newAge;
+        partyhat.classList.toggle("active");
+        partyconfetti.classList.toggle("active");
+    }
     age.innerHTML = newAge;
-} else if (month == "06" && day == "27") {
-    age.innerHTML = newAge;
-    partyhat.classList.toggle("active");
-    partyconfetti.classList.toggle("active");
 } else {
     age.innerHTML = newAge - 1;
 }
